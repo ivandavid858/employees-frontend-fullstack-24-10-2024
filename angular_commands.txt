@@ -12,7 +12,8 @@ ng g c register-employee    //generate component register-employee
 ng g s employee             //generate employee service
 npm i --save sweetalert2@7.26.9 //instalar sweetalert2
 
-
+NETLIFY:
+ng build(for Angular) or npm run build
 
 
 DUPLICAR LINEA EN VSC:
