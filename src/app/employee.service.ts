@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Employee } from './employee';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root' //providedIn -> this is so that employee.service service can be used by components
@@ -10,7 +11,8 @@ export class EmployeeService {
 
   //Url to obtain the employees list from backend
   //private baseURL = "http://localhost:8080/api/v1/employees";
-  private baseURL = "https://employees-backend-fullstack-23-10-2024-16.onrender.com/api/v1/employees";
+  //private baseURL = "https://employees-backend-fullstack-23-10-2024-16.onrender.com/api/v1/employees";
+  private baseURL = environment.backend;
 
   constructor(private httpClient:HttpClient) { 
 
