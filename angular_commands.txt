@@ -1,0 +1,24 @@
+
+g : generate
+c : component
+s : service
+
+
+ng new employees-frontend   //crear proyecto angular
+ng serve -o                 //ejecutar la aplicación
+ng g class employee         //generate employee class
+ng g c employees-list       //generate component employee-list
+ng g c register-employee    //generate component register-employee
+ng g s employee             //generate employee service
+npm i --save sweetalert2@7.26.9 //instalar sweetalert2
+
+
+
+
+DUPLICAR LINEA EN VSC:
+Shift+ Alt + ↓
+Shift+ Alt + ↑
+
+ESCRIBIR BACKTICKS:
+alt + 96
+
