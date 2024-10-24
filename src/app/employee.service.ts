@@ -9,7 +9,8 @@ import { Employee } from './employee';
 export class EmployeeService {
 
   //Url to obtain the employees list from backend
-  private baseURL = "http://localhost:8080/api/v1/employees";
+  //private baseURL = "http://localhost:8080/api/v1/employees";
+  private baseURL = "https://employees-backend-fullstack-23-10-2024-16.onrender.com/api/v1/employees";
 
   constructor(private httpClient:HttpClient) { 
 
