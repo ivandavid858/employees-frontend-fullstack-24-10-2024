@@ -20,7 +20,7 @@ export class EmployeeService {
 
   //Method to get employees
   getEmployeeList():Observable<Employee[]> {
-    return this.httpClient.get<Employee[]>(`${this.baseURL}`);
+    return this.httpClient.get<Employee[]>(`${this.baseURL}employees`);
   }
 
   //Method to register an employee
