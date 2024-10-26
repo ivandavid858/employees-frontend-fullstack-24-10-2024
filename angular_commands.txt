@@ -6,6 +6,9 @@ s : service
 
 ng new employees-frontend   //crear proyecto angular
 ng serve -o                 //ejecutar la aplicación
+ng serve                    //compile app for development
+ng build --prod             //(until version 14)complie app for production
+ng build --configuration "production" //(until version 17)complie app for production
 ng g class employee         //generate employee class
 ng g c employees-list       //generate component employee-list
 ng g c register-employee    //generate component register-employee
@@ -14,6 +17,7 @@ npm i --save sweetalert2@7.26.9 //instalar sweetalert2
 
 NETLIFY:
 ng build(for Angular) or npm run build
+ng build
 
 
 DUPLICAR LINEA EN VSC:
