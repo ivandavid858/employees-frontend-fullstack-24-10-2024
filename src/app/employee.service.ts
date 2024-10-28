@@ -10,15 +10,10 @@ import { environment } from 'src/environments/environment.prod';
 export class EmployeeService {
 
   //Url to obtain the employees list from backend
-  //private baseURL = "http://localhost:8080/api/v1/employees";
-  //private baseURL = "https://employees-backend-fullstack-23-10-2024-16.onrender.com/api/v1/employees";
-  //private baseURL = "https://employees-backend-fullstack-23-10-2024-16.onrender.com";
-
   //private backendUrl = "http://localhost:8080";
-  private backendUrl = "https://employees-backend-fullstack-23-10-2024-16.onrender.com";
-  
-  //private baseURL = environment.backendUrl + '/employees';
-  private baseURL = this.backendUrl + '/employees';
+
+  private baseURL = environment.backendUrl + '/employees';
+  //private baseURL = this.backendUrl + '/employees';
 
   constructor(private httpClient:HttpClient) { 
 
@@ -26,8 +21,6 @@ export class EmployeeService {
 
   //Method to get employees
   getEmployeeList():Observable<Employee[]> {
-    console.log('url:  '+this.baseURL)
-    console.log("SERWERWERWERWRE:::::::::::::::::::")
     return this.httpClient.get<Employee[]>(`${this.baseURL}`);
   }
 
